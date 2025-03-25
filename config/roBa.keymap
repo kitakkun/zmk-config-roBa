@@ -52,10 +52,10 @@
 
         layer_6 {
             bindings = <
-&kp EXCLAMATION  &kp N7  &kp N8  &kp N9  &kp MINUS                                 &kp CARET      &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp N0           &kp N4  &kp N5  &kp N6  &kp PLUS   &none         &kp RIGHT_BRACE  &kp NUMBER_6   &kp NUMBER_7   &kp NUMBER_8  &kp N9                &kp NUMBER_0
-&trans           &kp N1  &kp N2  &kp N3  &kp FSLH   &kp STAR      &kp RBKT         &kp LS(COLON)  &kp SEMI       &kp PERIOD    &kp SLASH             &kp SEMICOLON
-&trans           &trans  &trans  &trans  &trans     &trans        &trans           &trans                                                            &none
+&kp EXCLAMATION  &kp N7  &kp N8  &kp N9  &kp PLUS                                 &kp LESS_THAN     &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&kp N0           &kp N4  &kp N5  &kp N6  &kp MINUS  &none          &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none
+&trans           &kp N1  &kp N2  &kp N3  &kp UNDER  &kp EQUAL      &kp STAR       &kp COLON         &kp SEMI           &kp COMMA             &kp PERIOD             &none
+&trans           &trans  &trans  &trans  &trans     &trans         &trans         &trans                                                                            &none
             >;
         };
 
