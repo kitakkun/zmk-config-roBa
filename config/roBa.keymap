@@ -29,6 +29,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        Escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <10 11>;
+        };
     };
 
     keymap {
