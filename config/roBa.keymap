@@ -42,7 +42,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                   &kp T                          &kp Y          &kp U  &kp I      &kp O      &kp P
-&kp A             &kp S         &kp D         &kp F                   &kp G    &none          &mo 3  &kp H          &kp J  &kp K      &kp L      &kp ENTER
+&mt LCTRL A       &kp S         &kp D         &kp F                   &kp G    &none          &mo 3  &kp H          &kp J  &kp K      &kp L      &lt 3 MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B    &mo 1          &mo 2  &kp N          &kp M  &mkp LCLK  &mkp RCLK  &kp RIGHT_SHIFT
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_COMMAND SPACE  &kp TAB  &kp ENTER      &mo 1  &kp BACKSPACE                               &mkp MCLK
             >;
@@ -50,12 +50,12 @@
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        numberarrows {
+        NumberAndBraces {
             bindings = <
-&kp N1     &kp N2         &kp N3            &kp N4      &kp N5                                 &kp PLUS              &kp MINUS              &kp STAR         &kp SLASH        &kp PERCENT
-&kp N6     &kp N7         &kp N8            &kp N9      &kp N0     &none      &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp BACKSLASH
-&kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN  &kp PERIOD  &kp COMMA  &none      &kp GRAVE        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION  &kp GRAVE        &kp TILDE
-&none      &none          &none             &none       &none      &none      &none            &none                                                                          &none
+&kp N1     &kp N2         &kp N3    &kp N4     &kp N5                             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp GRAVE
+&kp N6     &kp N7         &kp N8    &kp N9     &kp N0     &none      &kp AT_SIGN  &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+&kp EQUAL  &kp LESS_THAN  &kp PLUS  &kp EQUAL  &kp COMMA  &none      &kp HASH     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COMMA         &kp PERIOD         &kp SLASH
+&none      &none          &none     &none      &none      &none      &none        &none                                                                             &none
             >;
         };
 
@@ -68,12 +68,12 @@
             >;
         };
 
-        ARROW {
+        ARROW_AND_FUNCTIONS {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW        &kp LC(TAB)              &trans                                   &trans          &trans    &trans        &trans     &trans
-&kp HOME        &kp LC(LEFT_ARROW)      &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)         &kp LC(RIGHT_ARROW)  &trans      &trans  &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans              &kp LG(LS(RIGHT_ARROW))  &trans               &trans      &trans  &trans          &trans    &trans        &trans     &trans
-&trans          &trans                  &trans              &trans                   &trans               &trans      &trans  &trans                                             &trans
+&kp F1   &kp F2   &kp F3             &kp F4             &kp F5                                                         &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp RC(UP_ARROW)     &kp RC(RIGHT)        &trans
+&kp F6   &kp F7   &kp F8             &kp F9             &kp F10        &none              &kp RG(RC(RA(LEFT_ARROW)))   &kp LEFT_ARROW      &kp DOWN            &kp UP_ARROW         &kp RIGHT            &trans
+&kp F11  &kp F12  &kp LA(LG(LC(M)))  &kp LG(LC(LA(N)))  &kp LG(SPACE)  &kp RC(SPACE)      &kp RG(RC(RA(RIGHT_ARROW)))  &kp RG(LEFT_ARROW)  &kp RA(LEFT_ARROW)  &kp RA(RIGHT_ARROW)  &kp RG(RIGHT_ARROW)  &trans
+&trans   &trans   &trans             &trans             &trans         &trans             &trans                       &trans                                                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
