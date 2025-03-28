@@ -33,7 +33,7 @@
 
         Escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <10 11>;
+            key-positions = <0 1>;
         };
     };
 
