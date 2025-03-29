@@ -58,10 +58,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R      &kp T                                                               &kp Y      &kp U  &kp I        &kp O         &kp P
-&mt LCTRL A       &kp S         &kp D         &kp F      &kp G      &mkp MCLK                   &lt 5 RC(SPACE)              &kp H      &kp J  &kp K        &kp L         &lt 1 MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B      &mt LEFT_COMMAND SPACE      &mt RIGHT_COMMAND BACKSPACE  &kp N      &kp M  &lt 3 COMMA  &lt 4 PERIOD  &kp RIGHT_SHIFT
-&mo 5             &kp LEFT_WIN  &kp LEFT_ALT  &mkp LCLK  &mkp RCLK  &kp ENTER                   &kp RIGHT_ALT                &kp RCTRL                                    &kp RIGHT_ALT
+&kp Q             &kp W         &kp E         &kp R      &kp T                                                               &kp Y      &kp U  &kp I      &kp O    &kp P
+&mt LCTRL A       &kp S         &kp D         &kp F      &kp G      &mkp MCLK                   &lt 3 RC(SPACE)              &kp H      &kp J  &kp K      &kp L    &lt 1 MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B      &mt LEFT_COMMAND SPACE      &mt RIGHT_COMMAND BACKSPACE  &kp N      &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
+&mo 3             &kp LEFT_WIN  &kp LEFT_ALT  &mkp LCLK  &mkp RCLK  &kp ENTER                   &kp RIGHT_ALT                &kp RCTRL                             &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -69,39 +69,21 @@
 
         ARROW_AND_FUNCTIONS {
             bindings = <
-&kp F1   &kp F2   &kp F3             &kp F4             &kp F5                                                         &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp RC(UP_ARROW)     &kp RC(RIGHT)        &trans
-&kp F6   &kp F7   &kp F8             &kp F9             &kp F10        &none              &kp RG(RC(RA(LEFT_ARROW)))   &kp LEFT_ARROW      &kp DOWN            &kp UP_ARROW         &kp RIGHT            &trans
-&kp F11  &kp F12  &kp LA(LG(LC(M)))  &kp LG(LC(LA(N)))  &kp LG(SPACE)  &kp RC(SPACE)      &kp RG(RC(RA(RIGHT_ARROW)))  &kp RG(LEFT_ARROW)  &kp RA(LEFT_ARROW)  &kp RA(RIGHT_ARROW)  &kp RG(RIGHT_ARROW)  &trans
-&trans   &trans   &trans             &trans             &trans         &trans             &trans                       &trans                                                                            &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3       &kp NUMBER_4       &kp N5                                                         &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp RC(UP_ARROW)     &kp RC(RIGHT)        &trans
+&kp NUMBER_6  &kp N7        &kp NUMBER_8       &kp N9             &kp N0         &none              &kp RG(RC(RA(LEFT_ARROW)))   &kp LEFT_ARROW      &kp DOWN            &kp UP_ARROW         &kp RIGHT            &trans
+&kp F11       &kp F12       &kp LA(LG(LC(M)))  &kp LG(LC(LA(N)))  &kp LG(SPACE)  &kp RC(SPACE)      &kp RG(RC(RA(RIGHT_ARROW)))  &kp RG(LEFT_ARROW)  &kp RA(LEFT_ARROW)  &kp RA(RIGHT_ARROW)  &kp RG(RIGHT_ARROW)  &trans
+&trans        &trans        &trans             &trans             &trans         &trans             &trans                       &trans                                                                            &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_5 {
-            bindings = <
-&kp EXCLAMATION  &kp AT    &kp HASH   &kp DOLLAR  &kp PERCENT                      &kp CARET      &kp AMPERSAND     &kp STAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp N1           &kp N2    &kp N3     &kp N4      &kp N5       &trans      &trans  &kp N6         &kp N7            &kp N8     &kp N9                &kp N0
-&kp BACKSLASH    &kp SEMI  &kp COLON  &trans      &trans       &trans      &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp COMMA  &kp PERIOD            &kp SLASH
-&trans           &trans    &trans     &trans      &trans       &trans      &trans  &trans                                                            &trans
-            >;
-        };
-
-        NumberAndBraces {
-            bindings = <
-&kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
-&kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none      &none  &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
-&none   &none   &none   &none   &none   &none      &none  &none                 &none                  &kp COMMA         &kp PERIOD         &kp SLASH
-&none   &none   &none   &none   &none   &none      &none  &none                                                                             &none
-            >;
-        };
-
         Symbols {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN    &kp HASH   &kp DOLLAR  &kp PERCENT                            &kp CARET      &kp AMPERSAND     &kp STAR           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp QUESTION     &kp BACKSLASH  &kp GRAVE  &kp TILDE   &kp PIPE     &none          &kp PLUS   &kp EQUAL      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp COLON             &kp SEMICOLON
-&none            &none          &none      &none       &none        &kp EQUAL      &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN  &none              &none                 &kp SLASH
-&none            &none          &none      &none       &none        &none          &none      &none                                                                     &none
+&kp EXCLAMATION  &kp AT_SIGN       &kp HASH           &kp DOLLAR      &kp PERCENT                                &kp CARET      &kp AMPERSAND     &kp STAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp PLUS         &kp MINUS         &kp UNDER          &kp SLASH       &kp EQUAL        &none          &kp EQUAL  &kp BACKSLASH  &kp APOS          &kp APOS   &kp SEMI              &kp SEMI
+&kp GRAVE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp TILDE      &kp PIPE   &kp LESS_THAN  &kp GREATER_THAN  &kp COMMA  &kp PERIOD            &kp QUESTION
+&none            &none             &none              &none           &none            &none          &none      &none                                                             &none
             >;
         };
 
