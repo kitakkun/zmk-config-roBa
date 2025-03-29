@@ -48,6 +48,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
             tap-ms = <20>;
         };
     };
@@ -63,7 +64,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp ENTER  &mkp LCLK  &mkp RCLK                   &kp RIGHT_ALT                &kp RCTRL                                    &kp RIGHT_ALT
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         ARROW_AND_FUNCTIONS {
