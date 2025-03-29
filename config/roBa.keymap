@@ -45,7 +45,9 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
             // 追加: スクロールのタップ時間を設定 (20ms)
+
             tap-ms = <20>;
         };
     };
@@ -61,7 +63,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mkp LCLK  &mkp RCLK  &kp ENTER                   &kp RIGHT_ALT                &kp RCTRL                                    &kp RIGHT_ALT
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         ARROW_AND_FUNCTIONS {
@@ -72,7 +74,7 @@
 &trans   &trans   &trans             &trans             &trans         &trans             &trans                       &trans                                                                            &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_5 {
