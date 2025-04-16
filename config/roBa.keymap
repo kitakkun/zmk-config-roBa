@@ -15,10 +15,6 @@
     flavor = "tap-preferred";
 };
 
-&msc {
-    tapping-term-ms = <0>;
-};
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -114,7 +110,7 @@
 &trans       &trans      &trans         &trans           &trans        &trans         &trans  &trans                                                                        &trans
             >;
 
-            sensor-bindings = <&mouse_scroll_behavior_h>;
+            sensor-bindings = <&volumechange>;
         };
 
         ConfigurationLayer {
