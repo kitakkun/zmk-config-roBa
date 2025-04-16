@@ -48,6 +48,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
 
@@ -97,7 +98,7 @@
 &lt 3 TAB         &kp LEFT_WIN  &kp LG(LS(N5))  &mt LEFT_SHIFT SPACE  &mt LCTRL LEFT_SHIFT  &mt RIGHT_ALT LC(SPACE)      &kp BACKSPACE      &lt 2 ENTER                               &lt 1 ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         NUMBER_AND_ARROWS {
@@ -108,7 +109,7 @@
 &trans          &trans  &trans  &trans  &trans     &trans                &trans             &trans                                                                                         &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         Symbols {
