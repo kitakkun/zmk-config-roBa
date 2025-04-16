@@ -50,6 +50,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
             tap-ms = <20>;
         };
 
@@ -58,6 +59,13 @@
             label = "MOUSE_SCROLL_BEHAVIOR_H";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+        };
+
+        volumechange: volumechange {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "VOLUMECHANGE";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
         };
     };
 
@@ -92,7 +100,7 @@
 &trans          &trans  &trans  &trans  &trans     &trans                &trans             &trans                                                                                         &trans
             >;
 
-            sensor-bindings = <&mouse_scroll_behavior_h>;
+            sensor-bindings = <&volumechange>;
         };
 
         Symbols {
