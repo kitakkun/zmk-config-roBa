@@ -74,6 +74,13 @@
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
         };
+
+        verticalScroll: verticalScroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "VERTICALSCROLL";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        };
     };
 
     macros {
@@ -96,7 +103,7 @@
 &lt 3 TAB         &kp LEFT_WIN  &kp LG(LS(N5))  &mt LEFT_SHIFT SPACE  &mt LCTRL LEFT_SHIFT  &mt RIGHT_ALT LC(SPACE)      &kp BACKSPACE      &lt 2 ENTER                               &lt 1 ESCAPE
             >;
 
-            sensor-bindings = <&new_behavior SCRL_UP SCRL_DOWN>;
+            sensor-bindings = <&verticalScroll>;
         };
 
         NUMBER_AND_ARROWS {
