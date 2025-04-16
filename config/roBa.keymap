@@ -51,6 +51,13 @@
 
             tap-ms = <20>;
         };
+
+        mouse_scroll: mouse_scroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "MOUSE_SCROLL";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        };
     };
 
     macros {
@@ -73,7 +80,7 @@
 &lt 3 TAB         &kp LEFT_WIN  &kp LG(LS(N5))  &mt LEFT_SHIFT SPACE  &mt LCTRL LEFT_SHIFT  &mt RIGHT_ALT LC(SPACE)      &kp BACKSPACE      &lt 2 ENTER                               &lt 1 ESCAPE
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&mouse_scroll>;
         };
 
         NUMBER_AND_ARROWS {
