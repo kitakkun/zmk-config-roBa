@@ -49,6 +49,13 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
         };
+
+        mouse_scroll_behavior_h: mouse_scroll_behavior_h {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "MOUSE_SCROLL_BEHAVIOR_H";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+        };
     };
 
     macros {
@@ -71,7 +78,7 @@
 &lt 3 TAB         &kp LEFT_WIN  &kp LG(LS(N5))  &mt LEFT_SHIFT SPACE  &mt LCTRL LEFT_SHIFT  &mt RIGHT_ALT LC(SPACE)      &kp BACKSPACE      &lt 2 ENTER                               &lt 1 ESCAPE
             >;
 
-            sensor-bindings = <&mouse_scroll>;
+            sensor-bindings = <&mouse_scroll_behavior>;
         };
 
         NUMBER_AND_ARROWS {
@@ -82,7 +89,7 @@
 &trans          &trans  &trans  &trans  &trans     &trans                &trans             &trans                                                                                         &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
+            sensor-bindings = <&mouse_scroll_behavior_h>;
         };
 
         Symbols {
@@ -92,6 +99,8 @@
 &kp GRAVE    &kp UNDER   &kp MINUS      &kp EXCLAMATION  &kp QUESTION  &kp TILDE      &trans  &kp PIPE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES
 &trans       &trans      &trans         &trans           &trans        &trans         &trans  &trans                                                                        &trans
             >;
+
+            sensor-bindings = <&mouse_scroll_behavior_h>;
         };
 
         ConfigurationLayer {
