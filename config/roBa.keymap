@@ -100,7 +100,7 @@
 &trans          &trans  &trans  &trans  &trans     &trans                &trans             &trans                                                                                         &trans
             >;
 
-            sensor-bindings = <&volumechange>;
+            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) PAGE_DOWN>;
         };
 
         Symbols {
