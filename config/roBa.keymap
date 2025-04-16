@@ -43,9 +43,9 @@
     };
 
     behaviors {
-        mouse_scroll_behavior: mouse_scroll {
+        mouse_scroll_behavior: mouse_scroll_behavior {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "MOUSE_SCROLL";
+            label = "MOUSE_SCROLL_BEHAVIOR";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
         };
