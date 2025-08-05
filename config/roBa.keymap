@@ -103,10 +103,10 @@
 
         NUMBER_AND_ARROWS {
             bindings = <
-&kp ESCAPE      &kp N7  &kp N8  &kp N9  &kp SLASH                                                      &kp C_VOLUME_DOWN           &kp C_VOLUME_UP              &kp RG(RA(L))      &kp RG(SLASH)      &trans
-&kp N0          &kp N4  &kp N5  &kp N6  &kp DOT               &kp K_MUTE            &kp K_MUTE         &kp LEFT_ARROW              &kp DOWN                     &kp UP_ARROW       &kp RIGHT          &kp LG(LA(L))
-&kp LEFT_SHIFT  &kp N1  &kp N2  &kp N3  &kp COMMA             &kp LEFT_COMMAND      &kp RIGHT_COMMAND  &kp RG(RC(RA(LEFT_ARROW)))  &kp RA(RC(RG(RIGHT_ARROW)))  &kp RA(RC(RG(M)))  &kp RG(RC(RA(N)))  &trans
-&trans          &trans  &trans  &trans  &kp LC(LG(LEFT_ALT))  &trans                &trans             &trans                                                                                         &trans
+&kp ESCAPE      &kp N7  &kp N8  &kp N9  &kp SLASH                                           &kp LA(LC(LG(DOWN_ARROW)))  &kp LA(LC(LG(UP_ARROW)))     &kp RG(RA(L))      &kp RG(SLASH)      &trans
+&kp N0          &kp N4  &kp N5  &kp N6  &kp DOT    &kp K_MUTE            &kp K_MUTE         &kp LEFT_ARROW              &kp DOWN                     &kp UP_ARROW       &kp RIGHT          &kp LG(LA(L))
+&kp LEFT_SHIFT  &kp N1  &kp N2  &kp N3  &kp COMMA  &kp LEFT_COMMAND      &kp RIGHT_COMMAND  &kp RG(RC(RA(LEFT_ARROW)))  &kp RA(RC(RG(RIGHT_ARROW)))  &kp RA(RC(RG(M)))  &kp RG(RC(RA(N)))  &trans
+&trans          &trans  &trans  &trans  &trans     &trans                &trans             &trans                                                                                         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
